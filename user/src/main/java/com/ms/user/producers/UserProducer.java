@@ -28,7 +28,6 @@ public class UserProducer {
 		emailDto.setSubject("Cadastro realizado com sucesso!");
 		emailDto.setText(model.getName() + ", seja bem vindo(a)!");
 		
-		
 		rabbitTemplate.convertAndSend("", routingKey, emailDto);
 		
 		}
