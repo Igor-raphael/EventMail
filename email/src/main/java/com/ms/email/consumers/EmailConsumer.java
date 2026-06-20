@@ -25,10 +25,10 @@ public class EmailConsumer {
 		BeanUtils.copyProperties(emailRecord, emailModel);
 		service.sendEmail(emailModel);
 		
-		//Test-Terminal
-		//System.out.println(emailRecord.emailTo());
-		//System.out.println(emailRecord.subject());
-		//System.out.println(emailRecord.text());
+		//Terminal-Information
+		System.out.println(emailRecord.emailTo());
+		System.out.println(emailRecord.subject());
+		System.out.println(emailRecord.text());
 	}
 
 }

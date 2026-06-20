@@ -9,5 +9,7 @@ import com.ms.user.models.UserModel;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserModel, UUID> {
+	
+	boolean existsByEmail(String email);
 
 }
